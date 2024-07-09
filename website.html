@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Football in A-Frame</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera position="0 1.6 5"></a-camera>
+            <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="directional" color="#ffffff" intensity="0.6" position="-1 2 1"></a-light>
+            <a-sphere src="https://cdn.glitch.global/304a3e72-26d4-4397-b0c8-0ba7b1a3324d/football_texture.jpg" radius="0.5" position="0 0.5 -3">
+        <a-animation attribute="rotation" to="0 360 0" dur="10000" repeat="indefinite"></a-animation>
+      </a-sphere>
+      <a-box position="-1 1 -8" depth="0.1" height="2" width="0.1" color="#ffffff"></a-box>
+      <a-box position="1 1 -8" depth="0.1" height="2" width="0.1" color="#ffffff"></a-box>
+      <a-box position="0 2 -8" depth="0.1" height="0.1" width="2.1" color="#ffffff"></a-box>
+      <a-plane position="0 1 -8.05" width="2" height="2" color="#dddddd" opacity="0.5"></a-plane>
+          <a-plane rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+    </a-scene>
+  </body>
+</html>
